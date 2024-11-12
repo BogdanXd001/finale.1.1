@@ -558,8 +558,45 @@ body {
 
 /* Responsive styles for mobile */
 @media (max-width: 768px) {
-    .container { grid-template-columns: 1fr; /* Stack cards vertically */ } .card { width: 90%; /* Wider cards */ margin: 10px auto; /* Center cards with margin adjustments */ padding: 15px; /* Less padding for smaller height */ } .card h2 { font-size: 1.2em; /* Slightly smaller font size */ padding: 10px; /* Less padding for header */ } .card p { font-size: 1em; /* Slightly smaller font size for paragraphs */ } .progress-bar { height: 15px; /* Smaller progress bar height */ }
-    .presale-container {
+    .container { 
+        grid-template-columns: 1fr; /* Stack cards vertically */ 
+    } 
+    
+    .card { 
+        width: 90%; /* Wider cards */ 
+        height: 80%;
+        margin: 10px auto; /* Center cards with margin adjustments */ 
+        padding: 15px; /* Less padding for smaller height */ 
+    } 
+    
+    .card h2 { 
+        font-size: 1.2em; /* Slightly smaller font size */ 
+        padding: 10px; /* Less padding for header */ 
+    } 
+        
+        .card p { 
+            font-size: 1em; /* Slightly smaller font size for paragraphs */ 
+        } 
+        
+        .progress-bar { 
+            height: 15px; /* Smaller progress bar height */ 
+        }
+    
+    .faq-container {
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        margin-right: 0px;
+        margin-top: 1400px;
+        float: right;
+        color: #f2f3f4;
+    }
+
+    .faq-container h1 {
+        text-align: center;
+    }
+    
+        .presale-container {
         width: 90%; /* Responsive width */
         max-width: none; /* Remove max-width to let it use full width on mobile */
         left: auto; /* Reset left positioning */
@@ -629,12 +666,15 @@ body {
     .bio-content {
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center the items */
-        text-align: center; /* Center-align the text */
+        align-items:center; /* Center the items */
+        text-align: justify; /* Center-align the text */
     }
 
     .biop {
         margin-top: 20px; /* Center text on mobile */
+        text-align: center;
+        width: 80%;
+        margin-right: 40px;
     }
 
     .bio-image {
@@ -670,7 +710,7 @@ body {
 
     .Roadmap {
         position: relative;
-        top: 500px; /* Adjust this value */
+        top: 700px; /* Adjust this value */
         font-size: 30px;
     }
 
@@ -700,6 +740,9 @@ body {
         overflow-x: auto; /* Enable horizontal scrolling */
         scroll-snap-type: x mandatory; /* Snap cards into place */
         -webkit-overflow-scrolling: touch; /* Smooth scrolling on mobile */
+        width: 80%;
+        margin-left: 80px;
+        gap: 100px;
     }
 
     .card-1 {
@@ -711,6 +754,20 @@ body {
     /* Optional: Hide scrollbar for a cleaner look */
     .card-carousel::-webkit-scrollbar {
         display: none;
+    }
+
+    .footer {
+        margin-top: 500px;
+    }
+    
+    .nav-links-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer h3 {
+        font-size: 20px;
+        margin-top: 50px;
     }
 
 }
